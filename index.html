@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Básica</title>
+  <style>
+    body { font-family: Arial; text-align: center; }
+    #resultado { width: 200px; height: 40px; margin-bottom: 10px; font-size: 20px; }
+    button { width: 45px; height: 45px; margin: 2px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Calculadora</h1>
+  <input type="text" id="resultado" disabled>
+  <br>
+  <div id="botones">
+    <button onclick="agregar('7')">7</button>
+    <button onclick="agregar('8')">8</button>
+    <button onclick="agregar('9')">9</button>
+    <button onclick="agregar('/')">/</button><br>
+    <button onclick="agregar('4')">4</button>
+    <button onclick="agregar('5')">5</button>
+    <button onclick="agregar('6')">6</button>
+    <button onclick="agregar('*')">*</button><br>
+    <button onclick="agregar('1')">1</button>
+    <button onclick="agregar('2')">2</button>
+    <button onclick="agregar('3')">3</button>
+    <button onclick="agregar('-')">-</button><br>
+    <button onclick="agregar('0')">0</button>
+    <button onclick="agregar('.')">.</button>
+    <button onclick="calcular()">=</button>
+    <button onclick="agregar('+')">+</button><br>
+    <button onclick="limpiar()">C</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
